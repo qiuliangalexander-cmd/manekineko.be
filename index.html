@@ -23,18 +23,23 @@
                     </div>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="#home">ACCUEIL</a></li>
-                    <li><a href="#about">À PROPOS</a></li>
-                    <li><a href="#menu">MENU</a></li>
-                    <li><a href="#gallery">GALERIE</a></li>
-                    <li><a href="#reservation">RÉSERVATION</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#home" data-en="HOME" data-nl="THUIS" data-fr="ACCUEIL">ACCUEIL</a></li>
+                    <li><a href="#about" data-en="ABOUT" data-nl="OVER ONS" data-fr="À PROPOS">À PROPOS</a></li>
+                    <li><a href="#menu" data-en="MENU" data-nl="MENU" data-fr="MENU">MENU</a></li>
+                    <li><a href="#gallery" data-en="GALLERY" data-nl="GALERIJ" data-fr="GALERIE">GALERIE</a></li>
+                    <li><a href="#reservation" data-en="RESERVATION" data-nl="RESERVERING" data-fr="RÉSERVATION">RÉSERVATION</a></li>
+                    <li><a href="#contact" data-en="CONTACT" data-nl="CONTACT" data-fr="CONTACT">CONTACT</a></li>
                 </ul>
                 <div class="nav-right">
                     <div class="phone">
                         <span>📞</span> 02 569 31 59
                     </div>
-                    <a href="#reservation" class="order-btn">COMMANDER EN LIGNE</a>
+                    <div class="language-selector">
+                        <button class="lang-btn active" data-lang="fr">FR</button>
+                        <button class="lang-btn" data-lang="nl">NL</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                    <a href="#reservation" class="order-btn" data-en="ORDER ONLINE" data-nl="ONLINE BESTELLEN" data-fr="COMMANDER EN LIGNE">COMMANDER EN LIGNE</a>
                 </div>
                 <div class="hamburger">
                     <span></span>
@@ -50,13 +55,13 @@
         <div class="hero-content">
             <div class="container">
                 <div class="hero-text">
-                    <p class="hero-subtitle">BIENVENUE CHEZ</p>
+                    <p class="hero-subtitle" data-en="WELCOME TO" data-nl="WELKOM BIJ" data-fr="BIENVENUE CHEZ">BIENVENUE CHEZ</p>
                     <h2 class="hero-title">Maneki Neko <span class="red-char">福</span></h2>
-                    <p class="hero-description">SUSHI & CUISINE JAPONAISE AUTHENTIQUE<br>À IXELLES</p>
-                    <p class="hero-tagline">Des ingrédients frais, un savoir-faire artisanal<br>et une passion pour la cuisine japonaise.</p>
+                    <p class="hero-description" data-en="AUTHENTIC JAPANESE SUSHI & CUISINE<br>IN IXELLES" data-nl="AUTHENTIEKE JAPANSE SUSHI & KEUKEN<br>IN ELSENE" data-fr="SUSHI & CUISINE JAPONAISE AUTHENTIQUE<br>À IXELLES">SUSHI & CUISINE JAPONAISE AUTHENTIQUE<br>À IXELLES</p>
+                    <p class="hero-tagline" data-en="Fresh ingredients, artisanal expertise<br>and passion for Japanese cuisine." data-nl="Verse ingrediënten, ambachtelijke expertise<br>en passie voor Japanse keuken." data-fr="Des ingrédients frais, un savoir-faire artisanal<br>et une passion pour la cuisine japonaise.">Des ingrédients frais, un savoir-faire artisanal<br>et une passion pour la cuisine japonaise.</p>
                     <div class="hero-buttons">
-                        <a href="#menu" class="btn btn-primary">COMMANDER EN LIGNE →</a>
-                        <a href="#reservation" class="btn btn-secondary">RÉSERVER UNE TABLE</a>
+                        <a href="#menu" class="btn btn-primary" data-en="ORDER ONLINE →" data-nl="ONLINE BESTELLEN →" data-fr="COMMANDER EN LIGNE →">COMMANDER EN LIGNE →</a>
+                        <a href="#reservation" class="btn btn-secondary" data-en="BOOK A TABLE" data-nl="RESERVEER EEN TAFEL" data-fr="RÉSERVER UNE TABLE">RÉSERVER UNE TABLE</a>
                     </div>
                 </div>
             </div>
@@ -69,23 +74,23 @@
             <div class="features-grid">
                 <div class="feature-item">
                     <div class="feature-icon">🐟</div>
-                    <h3>PRODUITS FRAIS</h3>
-                    <p>Sélectionnés chaque jour</p>
+                    <h3 data-en="FRESH PRODUCTS" data-nl="VERSE PRODUCTEN" data-fr="PRODUITS FRAIS">PRODUITS FRAIS</h3>
+                    <p data-en="Selected daily" data-nl="Dagelijks geselecteerd" data-fr="Sélectionnés chaque jour">Sélectionnés chaque jour</p>
                 </div>
                 <div class="feature-item">
                     <div class="feature-icon">👨‍🍳</div>
-                    <h3>FAIT MAISON</h3>
-                    <p>Préparé à la commande</p>
+                    <h3 data-en="HOMEMADE" data-nl="HUISGEMAAKT" data-fr="FAIT MAISON">FAIT MAISON</h3>
+                    <p data-en="Prepared to order" data-nl="Op bestelling bereid" data-fr="Préparé à la commande">Préparé à la commande</p>
                 </div>
                 <div class="feature-item">
                     <div class="feature-icon">⭐</div>
-                    <h3>QUALITÉ PREMIUM</h3>
-                    <p>Ingrédients de premier choix</p>
+                    <h3 data-en="PREMIUM QUALITY" data-nl="PREMIUM KWALITEIT" data-fr="QUALITÉ PREMIUM">QUALITÉ PREMIUM</h3>
+                    <p data-en="Top-quality ingredients" data-nl="Ingrediënten van topkwaliteit" data-fr="Ingrédients de premier choix">Ingrédients de premier choix</p>
                 </div>
                 <div class="feature-item">
                     <div class="feature-icon">🏯</div>
-                    <h3>EXPÉRIENCE AUTHENTIQUE</h3>
-                    <p>Tradition japonaise à Ixelles</p>
+                    <h3 data-en="AUTHENTIC EXPERIENCE" data-nl="AUTHENTIEKE ERVARING" data-fr="EXPÉRIENCE AUTHENTIQUE">EXPÉRIENCE AUTHENTIQUE</h3>
+                    <p data-en="Japanese tradition in Ixelles" data-nl="Japanse traditie in Elsene" data-fr="Tradition japonaise à Ixelles">Tradition japonaise à Ixelles</p>
                 </div>
             </div>
         </div>
@@ -99,12 +104,12 @@
                     <div class="image-placeholder">🍱</div>
                 </div>
                 <div class="about-content">
-                    <h2 class="section-title">NOTRE HISTOIRE</h2>
-                    <h3>L'authenticité japonaise au cœur d'Ixelles</h3>
-                    <p>Depuis 2020, Maneki Neko vous accueille Rue du Trône à Ixelles et vous propose une cuisine japonaise authentique et raffinée.</p>
-                    <p>Notre équipe de chefs passionnés met son expertise au service de vos papilles. Chaque plat est préparé avec soin, utilisant uniquement des ingrédients de première qualité importés du Japon.</p>
-                    <p>Notre mission : vous offrir une expérience culinaire unique dans un cadre chaleureux et raffiné.</p>
-                    <a href="#menu" class="btn btn-link">EN SAVOIR PLUS →</a>
+                    <h2 class="section-title" data-en="OUR STORY" data-nl="ONS VERHAAL" data-fr="NOTRE HISTOIRE">NOTRE HISTOIRE</h2>
+                    <h3 data-en="Japanese authenticity in the heart of Ixelles" data-nl="Japanse authenticiteit in het hart van Elsene" data-fr="L'authenticité japonaise au cœur d'Ixelles">L'authenticité japonaise au cœur d'Ixelles</h3>
+                    <p data-en="Since 2020, Maneki Neko has welcomed you on Rue du Trône in Ixelles, offering authentic and refined Japanese cuisine." data-nl="Sinds 2020 verwelkomt Maneki Neko u op de Troonstraat in Elsene met authentieke en verfijnde Japanse keuken." data-fr="Depuis 2020, Maneki Neko vous accueille Rue du Trône à Ixelles et vous propose une cuisine japonaise authentique et raffinée.">Depuis 2020, Maneki Neko vous accueille Rue du Trône à Ixelles et vous propose une cuisine japonaise authentique et raffinée.</p>
+                    <p data-en="Our team of passionate chefs puts their expertise at your service. Each dish is prepared with care using only top-quality ingredients imported from Japan." data-nl="Ons team van gepassioneerde chefs stelt hun expertise tot uw dienst. Elk gerecht wordt zorgvuldig bereid met alleen ingrediënten van topkwaliteit uit Japan." data-fr="Notre équipe de chefs passionnés met son expertise au service de vos papilles. Chaque plat est préparé avec soin, utilisant uniquement des ingrédients de première qualité importés du Japon.">Notre équipe de chefs passionnés met son expertise au service de vos papilles. Chaque plat est préparé avec soin, utilisant uniquement des ingrédients de première qualité importés du Japon.</p>
+                    <p data-en="Our mission: to offer you a unique culinary experience in a warm and refined setting." data-nl="Onze missie: u een unieke culinaire ervaring bieden in een warm en verfijnd kader." data-fr="Notre mission : vous offrir une expérience culinaire unique dans un cadre chaleureux et raffiné.">Notre mission : vous offrir une expérience culinaire unique dans un cadre chaleureux et raffiné.</p>
+                    <a href="#menu" class="btn btn-link" data-en="LEARN MORE →" data-nl="MEER INFORMATIE →" data-fr="EN SAVOIR PLUS →">EN SAVOIR PLUS →</a>
                 </div>
             </div>
         </div>
@@ -113,36 +118,36 @@
     <!-- Menu Section -->
     <section id="menu" class="menu">
         <div class="container">
-            <h2 class="section-title">NOS SPÉCIALITÉS</h2>
+            <h2 class="section-title" data-en="OUR SPECIALTIES" data-nl="ONZE SPECIALITEITEN" data-fr="NOS SPÉCIALITÉS">NOS SPÉCIALITÉS</h2>
             <div class="menu-grid">
                 <div class="menu-item">
                     <div class="menu-image">🍣</div>
-                    <h3>SUSHI & SASHIMI</h3>
-                    <p>Découvrir</p>
+                    <h3 data-en="SUSHI & SASHIMI" data-nl="SUSHI & SASHIMI" data-fr="SUSHI & SASHIMI">SUSHI & SASHIMI</h3>
+                    <p data-en="Discover" data-nl="Ontdekken" data-fr="Découvrir">Découvrir</p>
                 </div>
                 <div class="menu-item">
                     <div class="menu-image">🍜</div>
-                    <h3>DONBURI</h3>
-                    <p>Découvrir</p>
+                    <h3 data-en="DONBURI" data-nl="DONBURI" data-fr="DONBURI">DONBURI</h3>
+                    <p data-en="Discover" data-nl="Ontdekken" data-fr="Découvrir">Découvrir</p>
                 </div>
                 <div class="menu-item">
                     <div class="menu-image">🍲</div>
-                    <h3>PLATS CHAUDS</h3>
-                    <p>Découvrir</p>
+                    <h3 data-en="HOT DISHES" data-nl="WARME GERECHTEN" data-fr="PLATS CHAUDS">PLATS CHAUDS</h3>
+                    <p data-en="Discover" data-nl="Ontdekken" data-fr="Découvrir">Découvrir</p>
                 </div>
                 <div class="menu-item">
                     <div class="menu-image">🌮</div>
-                    <h3>STREET FOOD</h3>
-                    <p>Découvrir</p>
+                    <h3 data-en="STREET FOOD" data-nl="STREET FOOD" data-fr="STREET FOOD">STREET FOOD</h3>
+                    <p data-en="Discover" data-nl="Ontdekken" data-fr="Découvrir">Découvrir</p>
                 </div>
                 <div class="menu-item">
                     <div class="menu-image">🍵</div>
-                    <h3>DESSERTS</h3>
-                    <p>Découvrir</p>
+                    <h3 data-en="DESSERTS" data-nl="DESSERTS" data-fr="DESSERTS">DESSERTS</h3>
+                    <p data-en="Discover" data-nl="Ontdekken" data-fr="Découvrir">Découvrir</p>
                 </div>
             </div>
             <div class="menu-footer">
-                <a href="#" class="btn btn-link">VOIR LE MENU COMPLET →</a>
+                <a href="#" class="btn btn-link" data-en="VIEW FULL MENU →" data-nl="VOLLEDIG MENU BEKIJKEN →" data-fr="VOIR LE MENU COMPLET →">VOIR LE MENU COMPLET →</a>
             </div>
         </div>
     </section>
@@ -150,34 +155,34 @@
     <!-- Reservation Section -->
     <section id="reservation" class="reservation">
         <div class="container">
-            <h2 class="section-title">RÉSERVATION</h2>
+            <h2 class="section-title" data-en="RESERVATION" data-nl="RESERVERING" data-fr="RÉSERVATION">RÉSERVATION</h2>
             <div class="reservation-content">
                 <div class="reservation-form">
-                    <h3>Réservez votre table</h3>
+                    <h3 data-en="Book your table" data-nl="Reserveer uw tafel" data-fr="Réservez votre table">Réservez votre table</h3>
                     <form>
                         <div class="form-row">
                             <div class="form-group">
-                                <label>Nombre de personnes</label>
+                                <label data-en="Number of guests" data-nl="Aantal gasten" data-fr="Nombre de personnes">Nombre de personnes</label>
                                 <select required>
-                                    <option>2 personnes</option>
-                                    <option>3 personnes</option>
-                                    <option>4 personnes</option>
-                                    <option>5 personnes</option>
-                                    <option>6 personnes</option>
-                                    <option>7+ personnes</option>
+                                    <option data-en="2 guests" data-nl="2 gasten" data-fr="2 personnes">2 personnes</option>
+                                    <option data-en="3 guests" data-nl="3 gasten" data-fr="3 personnes">3 personnes</option>
+                                    <option data-en="4 guests" data-nl="4 gasten" data-fr="4 personnes">4 personnes</option>
+                                    <option data-en="5 guests" data-nl="5 gasten" data-fr="5 personnes">5 personnes</option>
+                                    <option data-en="6 guests" data-nl="6 gasten" data-fr="6 personnes">6 personnes</option>
+                                    <option data-en="7+ guests" data-nl="7+ gasten" data-fr="7+ personnes">7+ personnes</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label>Date</label>
+                                <label data-en="Date" data-nl="Datum" data-fr="Date">Date</label>
                                 <input type="date" required>
                             </div>
                             <div class="form-group">
-                                <label>Heure</label>
+                                <label data-en="Time" data-nl="Tijd" data-fr="Heure">Heure</label>
                                 <input type="time" required>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-reserve">RÉSERVER MAINTENANT</button>
-                        <p class="form-note">Réservation rapide et confirmation instantanée</p>
+                        <button type="submit" class="btn btn-reserve" data-en="BOOK NOW" data-nl="NU RESERVEREN" data-fr="RÉSERVER MAINTENANT">RÉSERVER MAINTENANT</button>
+                        <p class="form-note" data-en="Quick booking and instant confirmation" data-nl="Snelle boeking en onmiddellijke bevestiging" data-fr="Réservation rapide et confirmation instantanée">Réservation rapide et confirmation instantanée</p>
                     </form>
                 </div>
             </div>
@@ -187,14 +192,14 @@
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
         <div class="container">
-            <h2 class="section-title">GALERIE INSTAGRAM</h2>
+            <h2 class="section-title" data-en="INSTAGRAM GALLERY" data-nl="INSTAGRAM GALERIJ" data-fr="GALERIE INSTAGRAM">GALERIE INSTAGRAM</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">🍣</div>
                 <div class="gallery-item">🍱</div>
                 <div class="gallery-item">🍜</div>
             </div>
             <div class="gallery-footer">
-                <a href="#" class="btn btn-link">VOIR PLUS SUR INSTAGRAM 📸</a>
+                <a href="#" class="btn btn-link" data-en="VIEW MORE ON INSTAGRAM 📸" data-nl="MEER OP INSTAGRAM BEKIJKEN 📸" data-fr="VOIR PLUS SUR INSTAGRAM 📸">VOIR PLUS SUR INSTAGRAM 📸</a>
             </div>
         </div>
     </section>
@@ -202,21 +207,21 @@
     <!-- Reviews Section -->
     <section class="reviews">
         <div class="container">
-            <h2 class="section-title">AVIS CLIENTS</h2>
+            <h2 class="section-title" data-en="CUSTOMER REVIEWS" data-nl="KLANTBEOORDELINGEN" data-fr="AVIS CLIENTS">AVIS CLIENTS</h2>
             <div class="reviews-grid">
                 <div class="review-item">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Probablement le meilleur sushi d'Ixelles. Service impeccable et cadre magnifique !"</p>
+                    <p data-en="Probably the best sushi in Ixelles. Impeccable service and stunning setting!" data-nl="Waarschijnlijk de beste sushi in Elsene. Impeccabele service en prachtige omgeving!" data-fr="Probablement le meilleur sushi d'Ixelles. Service impeccable et cadre magnifique !">Probablement le meilleur sushi d'Ixelles. Service impeccable et cadre magnifique !</p>
                     <p class="reviewer">Sophie L.</p>
                 </div>
                 <div class="review-item">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Produits frais, service impeccable et cadre magnifique ! Une vraie découverte."</p>
+                    <p data-en="Fresh products, impeccable service and stunning setting! A real discovery." data-nl="Verse producten, impeccabele service en prachtige omgeving! Een echte ontdekking." data-fr="Produits frais, service impeccable et cadre magnifique ! Une vraie découverte.">Produits frais, service impeccable et cadre magnifique ! Une vraie découverte.</p>
                     <p class="reviewer">Thomas D.</p>
                 </div>
                 <div class="review-item">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Une visite inoubliable. Les yeux fermés, je recommande les yeux fermés."</p>
+                    <p data-en="An unforgettable visit. I recommend with my eyes closed." data-nl="Een onvergetelijk bezoek. Ik raad aan met gesloten ogen." data-fr="Une visite inoubliable. Les yeux fermés, je recommande les yeux fermés.">Une visite inoubliable. Les yeux fermés, je recommande les yeux fermés.</p>
                     <p class="reviewer">Julie M.</p>
                 </div>
             </div>
@@ -228,22 +233,24 @@
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info">
-                    <h2 class="section-title">INFORMATIONS PRATIQUES</h2>
+                    <h2 class="section-title" data-en="PRACTICAL INFORMATION" data-nl="PRAKTISCHE INFORMATIE" data-fr="INFORMATIONS PRATIQUES">INFORMATIONS PRATIQUES</h2>
                     <div class="info-item">
-                        <h4>📍 Localisation</h4>
+                        <h4 data-en="📍 Location" data-nl="📍 Locatie" data-fr="📍 Localisation">📍 Localisation</h4>
                         <p>Rue du Trône 39, 1050 Ixelles</p>
                     </div>
                     <div class="info-item">
-                        <h4>📞 Téléphone</h4>
+                        <h4 data-en="📞 Phone" data-nl="📞 Telefoon" data-fr="📞 Téléphone">📞 Téléphone</h4>
                         <p>02 569 31 59</p>
                     </div>
                     <div class="info-item">
-                        <h4>🕐 Horaires</h4>
-                        <p>Lun. - Ven. : 12h00 - 14h30 | 18h00 - 22h30<br>
-                        Dimanche : 18h00 - 22h30<br>
-                        <strong style="color: #c41e3a;">Samedi : Fermé</strong></p>
+                        <h4 data-en="🕐 Opening Hours" data-nl="🕐 Openingsuren" data-fr="🕐 Horaires">🕐 Horaires</h4>
+                        <p>
+                            <span data-en="Mon. - Fri.: 12:00 - 14:30 | 18:00 - 22:30" data-nl="Ma. - Vr.: 12:00 - 14:30 | 18:00 - 22:30" data-fr="Lun. - Ven. : 12h00 - 14h30 | 18h00 - 22h30">Lun. - Ven. : 12h00 - 14h30 | 18h00 - 22h30</span><br>
+                            <strong style="color: #c41e3a;" data-en="Saturday: Closed" data-nl="Zaterdag: Gesloten" data-fr="Samedi : Fermé">Samedi : Fermé</strong><br>
+                            <span data-en="Sunday: 18:00 - 22:30" data-nl="Zondag: 18:00 - 22:30" data-fr="Dimanche : 18h00 - 22h30">Dimanche : 18h00 - 22h30</span>
+                        </p>
                     </div>
-                    <a href="#" class="btn btn-link">VOIR SUR LA CARTE →</a>
+                    <a href="#" class="btn btn-link" data-en="VIEW ON MAP →" data-nl="KAART BEKIJKEN →" data-fr="VOIR SUR LA CARTE →">VOIR SUR LA CARTE →</a>
                 </div>
                 <div class="contact-map">
                     <div class="map-placeholder">📍 Google Maps</div>
@@ -264,12 +271,12 @@
                     </div>
                 </div>
                 <div class="footer-links">
-                    <a href="#about">À PROPOS</a>
-                    <a href="#menu">MENU</a>
-                    <a href="#reservation">RÉSERVATION</a>
-                    <a href="#contact">CONTACT</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">ACTUALITÉS</a>
+                    <a href="#about" data-en="ABOUT" data-nl="OVER ONS" data-fr="À PROPOS">À PROPOS</a>
+                    <a href="#menu" data-en="MENU" data-nl="MENU" data-fr="MENU">MENU</a>
+                    <a href="#reservation" data-en="RESERVATION" data-nl="RESERVERING" data-fr="RÉSERVATION">RÉSERVATION</a>
+                    <a href="#contact" data-en="CONTACT" data-nl="CONTACT" data-fr="CONTACT">CONTACT</a>
+                    <a href="#" data-en="FAQ" data-nl="VEELGESTELDE VRAGEN" data-fr="FAQ">FAQ</a>
+                    <a href="#" data-en="NEWS" data-nl="NIEUWS" data-fr="ACTUALITÉS">ACTUALITÉS</a>
                 </div>
                 <div class="footer-social">
                     <a href="#">📸 Instagram</a>
@@ -277,9 +284,9 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Maneki Neko. Tous droits réservés.</p>
+                <p data-en="© 2024 Maneki Neko. All rights reserved." data-nl="© 2024 Maneki Neko. Alle rechten voorbehouden." data-fr="© 2024 Maneki Neko. Tous droits réservés.">&copy; 2024 Maneki Neko. Tous droits réservés.</p>
                 <div class="footer-legal">
-                    <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a>
+                    <a href="#" data-en="Legal notice" data-nl="Juridische kennisgeving" data-fr="Mentions légales">Mentions légales</a> | <a href="#" data-en="Privacy policy" data-nl="Privacybeleid" data-fr="Politique de confidentialité">Politique de confidentialité</a>
                 </div>
             </div>
         </div>
