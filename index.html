@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Manekineko - Professional Services & Solutions">
-    <title>Manekineko | Professional Services</title>
+    <meta name="description" content="Maneki Neko - Sushi & Cuisine Japonaise Authentique à Ixelles">
+    <title>Maneki Neko | Sushi & Cuisine Japonaise</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -16,15 +16,26 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <h1>Manekineko</h1>
+                    <span class="logo-icon">🐱</span>
+                    <div class="logo-text">
+                        <h1>MANEKI NEKO</h1>
+                        <p>SUSHI & CUISINE JAPONAISE</p>
+                    </div>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home">ACCUEIL</a></li>
+                    <li><a href="#about">À PROPOS</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALERIE</a></li>
+                    <li><a href="#reservation">RÉSERVATION</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
+                <div class="nav-right">
+                    <div class="phone">
+                        <span>📞</span> 02 569 31 59
+                    </div>
+                    <a href="#reservation" class="order-btn">COMMANDER EN LIGNE</a>
+                </div>
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -36,11 +47,46 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <p class="hero-subtitle">BIENVENUE CHEZ</p>
+                    <h2 class="hero-title">Maneki Neko <span class="red-char">福</span></h2>
+                    <p class="hero-description">SUSHI & CUISINE JAPONAISE AUTHENTIQUE<br>À IXELLES</p>
+                    <p class="hero-tagline">Des ingrédients frais, un savoir-faire artisanal<br>et une passion pour la cuisine japonaise.</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary">COMMANDER EN LIGNE →</a>
+                        <a href="#reservation" class="btn btn-secondary">RÉSERVER UNE TABLE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
         <div class="container">
-            <div class="hero-content">
-                <h2 class="hero-title">Welcome to Manekineko</h2>
-                <p class="hero-subtitle">Bringing Fortune & Innovation to Your Business</p>
-                <a href="#services" class="cta-button">Explore Our Services</a>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🐟</div>
+                    <h3>PRODUITS FRAIS</h3>
+                    <p>Sélectionnés chaque jour</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👨‍🍳</div>
+                    <h3>FAIT MAISON</h3>
+                    <p>Préparé à la commande</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⭐</div>
+                    <h3>QUALITÉ PREMIUM</h3>
+                    <p>Ingrédients de premier choix</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🏯</div>
+                    <h3>EXPÉRIENCE AUTHENTIQUE</h3>
+                    <p>Tradition japonaise à Ixelles</p>
+                </div>
             </div>
         </div>
     </section>
@@ -48,81 +94,130 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Us</h2>
             <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-placeholder">🍱</div>
+                </div>
                 <div class="about-content">
-                    <p>Manekineko represents a fusion of traditional values and modern innovation. Like the iconic lucky cat that brings prosperity, we bring success to businesses of all sizes.</p>
-                    <p>Our team is dedicated to delivering exceptional results through strategic planning, creative solutions, and meticulous execution.</p>
-                </div>
-                <div class="about-features">
-                    <div class="feature-card">
-                        <div class="feature-icon">🎯</div>
-                        <h3>Strategic</h3>
-                        <p>Data-driven decisions for maximum impact</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">✨</div>
-                        <h3>Creative</h3>
-                        <p>Innovative solutions tailored to your needs</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🚀</div>
-                        <h3>Proven</h3>
-                        <p>Track record of successful projects</p>
-                    </div>
+                    <h2 class="section-title">NOTRE HISTOIRE</h2>
+                    <h3>L'authenticité japonaise au cœur d'Ixelles</h3>
+                    <p>Depuis 2020, Maneki Neko vous accueille Rue du Trône à Ixelles et vous propose une cuisine japonaise authentique et raffinée.</p>
+                    <p>Notre équipe de chefs passionnés met son expertise au service de vos papilles. Chaque plat est préparé avec soin, utilisant uniquement des ingrédients de première qualité importés du Japon.</p>
+                    <p>Notre mission : vous offrir une expérience culinaire unique dans un cadre chaleureux et raffiné.</p>
+                    <a href="#menu" class="btn btn-link">EN SAVOIR PLUS →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">💼</div>
-                    <h3>Business Consulting</h3>
-                    <p>Strategic guidance to optimize your business operations and growth potential.</p>
+            <h2 class="section-title">NOS SPÉCIALITÉS</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-image">🍣</div>
+                    <h3>SUSHI & SASHIMI</h3>
+                    <p>Découvrir</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🎨</div>
-                    <h3>Brand Design</h3>
-                    <p>Comprehensive branding solutions that reflect your company's vision and values.</p>
+                <div class="menu-item">
+                    <div class="menu-image">🍜</div>
+                    <h3>DONBURI</h3>
+                    <p>Découvrir</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">📱</div>
-                    <h3>Digital Development</h3>
-                    <p>Custom web and mobile solutions built with cutting-edge technology.</p>
+                <div class="menu-item">
+                    <div class="menu-image">🍲</div>
+                    <h3>PLATS CHAUDS</h3>
+                    <p>Découvrir</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">📊</div>
-                    <h3>Marketing Strategy</h3>
-                    <p>Data-driven marketing campaigns that drive results and engagement.</p>
+                <div class="menu-item">
+                    <div class="menu-image">🌮</div>
+                    <h3>STREET FOOD</h3>
+                    <p>Découvrir</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">🍵</div>
+                    <h3>DESSERTS</h3>
+                    <p>Découvrir</p>
+                </div>
+            </div>
+            <div class="menu-footer">
+                <a href="#" class="btn btn-link">VOIR LE MENU COMPLET →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h2 class="section-title">RÉSERVATION</h2>
+            <div class="reservation-content">
+                <div class="reservation-form">
+                    <h3>Réservez votre table</h3>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nombre de personnes</label>
+                                <select required>
+                                    <option>2 personnes</option>
+                                    <option>3 personnes</option>
+                                    <option>4 personnes</option>
+                                    <option>5 personnes</option>
+                                    <option>6 personnes</option>
+                                    <option>7+ personnes</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Date</label>
+                                <input type="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Heure</label>
+                                <input type="time" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-reserve">RÉSERVER MAINTENANT</button>
+                        <p class="form-note">Réservation rapide et confirmation instantanée</p>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
         <div class="container">
-            <h2 class="section-title">Recent Projects</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                    <h3>Project Alpha</h3>
-                    <p>Digital transformation for enterprise client</p>
+            <h2 class="section-title">GALERIE INSTAGRAM</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">🍣</div>
+                <div class="gallery-item">🍱</div>
+                <div class="gallery-item">🍜</div>
+            </div>
+            <div class="gallery-footer">
+                <a href="#" class="btn btn-link">VOIR PLUS SUR INSTAGRAM 📸</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title">AVIS CLIENTS</h2>
+            <div class="reviews-grid">
+                <div class="review-item">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Probablement le meilleur sushi d'Ixelles. Service impeccable et cadre magnifique !"</p>
+                    <p class="reviewer">Sophie L.</p>
                 </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                    <h3>Project Beta</h3>
-                    <p>Brand identity and web presence redesign</p>
+                <div class="review-item">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Produits frais, service impeccable et cadre magnifique ! Une vraie découverte."</p>
+                    <p class="reviewer">Thomas D.</p>
                 </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-                    <h3>Project Gamma</h3>
-                    <p>Mobile app development and launch</p>
+                <div class="review-item">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Une visite inoubliable. Les yeux fermés, je recommande les yeux fermés."</p>
+                    <p class="reviewer">Julie M.</p>
                 </div>
             </div>
         </div>
@@ -131,28 +226,26 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-wrapper">
+            <div class="contact-grid">
                 <div class="contact-info">
-                    <h3>Let's Work Together</h3>
-                    <p>Have a project in mind? We'd love to hear about it.</p>
-                    <div class="contact-details">
-                        <p><strong>Email:</strong> hello@manekineko.be</p>
-                        <p><strong>Location:</strong> Belgium</p>
+                    <h2 class="section-title">INFORMATIONS PRATIQUES</h2>
+                    <div class="info-item">
+                        <h4>📍 Localisation</h4>
+                        <p>Rue du Trône 39, 1050 Ixelles</p>
                     </div>
+                    <div class="info-item">
+                        <h4>📞 Téléphone</h4>
+                        <p>02 569 31 59</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>🕐 Horaires</h4>
+                        <p>Lun. - Dim. : 12h00 - 14h30 | 18h00 - 22h30</p>
+                    </div>
+                    <a href="#" class="btn btn-link">VOIR SUR LA CARTE →</a>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="cta-button">Send Message</button>
-                </form>
+                <div class="contact-map">
+                    <div class="map-placeholder">📍 Google Maps</div>
+                </div>
             </div>
         </div>
     </section>
@@ -160,11 +253,32 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Manekineko. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="Twitter">Twitter</a>
-                <a href="#" aria-label="Instagram">Instagram</a>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">🐱</span>
+                    <div>
+                        <h3>MANEKI NEKO</h3>
+                        <p>SUSHI & CUISINE JAPONAISE</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">À PROPOS</a>
+                    <a href="#menu">MENU</a>
+                    <a href="#reservation">RÉSERVATION</a>
+                    <a href="#contact">CONTACT</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">ACTUALITÉS</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#">📸 Instagram</a>
+                    <a href="#">👍 Facebook</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Maneki Neko. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a>
+                </div>
             </div>
         </div>
     </footer>

@@ -1,9 +1,10 @@
 // ===========================
-// HAMBURGER MENU
+// NAVIGATION HAMBURGER
 // ===========================
 
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
+const navLinks = document.querySelectorAll('.nav-menu a');
 
 if (hamburger) {
     hamburger.addEventListener('click', () => {
@@ -12,8 +13,6 @@ if (hamburger) {
     });
 }
 
-// Close menu when nav link is clicked
-const navLinks = document.querySelectorAll('.nav-menu a');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         navMenu.classList.remove('active');
@@ -31,59 +30,58 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
             target.scrollIntoView({
-                behavior: 'smooth'
+                behavior: 'smooth',
+                block: 'start'
             });
         }
     });
 });
 
 // ===========================
-// NAVBAR BACKGROUND ON SCROLL
+// NAVBAR SCROLL EFFECT
 // ===========================
 
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.2)';
+        navbar.style.borderBottomColor = 'rgba(212, 175, 55, 0.3)';
+        navbar.style.backdropFilter = 'blur(10px)';
     } else {
-        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+        navbar.style.borderBottomColor = '#404040';
+        navbar.style.backdropFilter = 'none';
     }
 });
 
 // ===========================
-// FORM SUBMISSION
+// FORM HANDLING
 // ===========================
 
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+const reservationForm = document.querySelector('.reservation-form form');
+if (reservationForm) {
+    reservationForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        // Get form values
-        const name = contactForm.querySelector('input[type="text"]').value;
-        const email = contactForm.querySelector('input[type="email"]').value;
-        const message = contactForm.querySelector('textarea').value;
+        const formData = new FormData(reservationForm);
+        const guests = reservationForm.querySelector('select').value;
+        const date = reservationForm.querySelector('input[type="date"]').value;
+        const time = reservationForm.querySelector('input[type="time"]').value;
         
-        // Simple validation
-        if (name && email && message) {
-            // Show success message
-            alert('Thank you for your message! We will get back to you soon.');
-            
-            // Reset form
-            contactForm.reset();
+        if (guests && date && time) {
+            alert(`Réservation confirmée !\n\nNombre de personnes: ${guests}\nDate: ${date}\nHeure: ${time}\n\nMerci de votre réservation !`);
+            reservationForm.reset();
         } else {
-            alert('Please fill in all fields.');
+            alert('Veuillez remplir tous les champs.');
         }
     });
 }
 
 // ===========================
-// INTERSECTION OBSERVER FOR ANIMATIONS
+// ANIMATION ON SCROLL
 // ===========================
 
 const observerOptions = {
     threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
+    rootMargin: '0px 0px -50px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -95,8 +93,8 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe elements for fade-in animation
-const animatedElements = document.querySelectorAll('.service-card, .feature-card, .portfolio-item');
+// Observe menu items, review items, and gallery items
+const animatedElements = document.querySelectorAll('.menu-item, .review-item, .gallery-item, .feature-item');
 animatedElements.forEach(element => {
     element.style.opacity = '0';
     element.style.transform = 'translateY(20px)';
@@ -116,17 +114,65 @@ window.addEventListener('scroll', () => {
     
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        
         if (scrollY >= sectionTop - 200) {
             current = section.getAttribute('id');
         }
     });
     
     navLinks.forEach(link => {
-        link.classList.remove('active');
+        link.style.color = 'var(--text)';
         if (link.getAttribute('href').slice(1) === current) {
-            link.classList.add('active');
+            link.style.color = 'var(--primary)';
         }
     });
+});
+
+// ===========================
+// MODAL/LIGHTBOX FOR GALLERY
+// ===========================
+
+const galleryItems = document.querySelectorAll('.gallery-item');
+galleryItems.forEach(item => {
+    item.addEventListener('click', function() {
+        const emoji = this.textContent;
+        alert(`Image: ${emoji}\n\nCliquez pour agrandir`);
+    });
+});
+
+// ===========================
+// MENU ITEM HOVER EFFECT
+// ===========================
+
+const menuItems = document.querySelectorAll('.menu-item');
+menuItems.forEach(item => {
+    item.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-5px)';
+    });
+    item.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+    });
+});
+
+// ===========================
+// SMOOTH COUNTER ANIMATION
+// ===========================
+
+function animateCounter(element, start, end, duration = 2000) {
+    let current = start;
+    const increment = (end - start) / (duration / 16);
+    
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= end) {
+            element.textContent = end;
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(current);
+        }
+    }, 16);
+}
+
+// Initialize on page load
+window.addEventListener('load', () => {
+    console.log('Maneki Neko website loaded successfully!');
 });
