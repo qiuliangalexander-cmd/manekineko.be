@@ -66,6 +66,13 @@ body {
 
 .logo-icon {
     font-size: 2.5rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
 }
 
 .logo-text h1 {
@@ -130,6 +137,37 @@ body {
     font-size: 0.9rem;
     color: var(--text);
     white-space: nowrap;
+}
+
+.language-selector {
+    display: flex;
+    gap: 0.5rem;
+    border-left: 1px solid var(--border);
+    padding-left: 1.5rem;
+}
+
+.lang-btn {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.lang-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.lang-btn.active {
+    background: var(--primary);
+    color: var(--dark);
+    border-color: var(--primary);
 }
 
 .order-btn {
@@ -327,7 +365,7 @@ section {
     font-size: 2.2rem;
     text-align: center;
     margin-bottom: 3rem;
-    color: var(--text);
+    color: var(--primary);
     letter-spacing: 1px;
     position: relative;
     display: inline-block;
@@ -780,6 +818,11 @@ section {
     
     .phone {
         font-size: 0.8rem;
+    }
+    
+    .language-selector {
+        padding-left: 0;
+        border-left: none;
     }
     
     .order-btn {
